@@ -1,0 +1,34 @@
+
+User First need to type following command in Command Prompt:
+py assignment.py
+
+
+After that user will see 900 cells as the configuration of grid
+is 30X30 and there will be 500 randomly placed cells having value in
+each cell either 0 or 1. 0 means Dead and 1 means live.
+
+
+1. After each tick or completion of function call user gets to provide input
+  ,user first need to specify the postion means index value(eg i,j) after
+  that user needs to specify the number of cells that they want to insert.
+  the number of cells should be less than or equal to 100.
+
+2 The user need to insert the data in 0 or 1 after that user needs to insert
+  the unique cell name.If duplication found than the program will give more chances
+  to user while printing the error message.
+
+3 After the insertion program will again call the function and the output will be
+  displayed  
+
+4 After the completion of function user will get to search the cell 
+  the cells can be accessible through the following input:
+  a+(cell number in string format) and also cell can be searched through
+  the key that user provided in the time of insertion
+
+5 This process will go on until user use os calls to exit like Ctrl+c in windows
+  Cmd
+
+
+Warnings:
+User need to provide values either in 0 or 1 while inserting input
+and index should not exceed the range(0,29) otherwise the error will be displayed.

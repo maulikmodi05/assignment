@@ -1,0 +1,65 @@
+Coding related things:
+
+Consider 0 as dead and 1 as live.
+
+I have made a class name "Grid" with the following methods:
+
+
+1 init = In the init method I have initialized list as 30X30 matrix
+         and also a dictionary with unique name for each index.
+	 Dictionary key will take string name as key and list of index as
+         value.
+
+2 rules = In this method I have taken index value as input and a list
+	  which will contain the indexes where I need to make changes.
+          In this method there is one more method which is named as 
+         "Adjacent".Here I have applied the rules that are given in the
+	 assignment and it will give the number of adjacent as output(Sum).
+          
+          
+
+3 add = Here the input provided by the user gets stored in the list it requires 
+        four arguments two for the indexes and one for value and one for name.
+
+4 update = It takes list of index value as input and make changes in the list 
+           accordingly.
+
+5 search_input = It takes cell position as argument it checks weather the given cell
+                 is live or dead and also check invalid position and gives the
+                 answer accordingly.
+
+6 display =     It displays the whole list of live and dead cells presesnt in the grid
+                if the value is 0 consider it as dead if value is 1 consider it as live
+
+
+7 dict_key = This function is used when user gives the cell name to check
+             weather that key is already occupied or not returns the value
+             accordingly
+ 
+
+Execution of program:
+
+
+First of all I have created an object of class Grid
+and displayed its value
+
+After that an infinite while loop starts where the program takes the input
+for insertion firstly it requires index value from user than the corresponding
+values (0 or 1) and name of the cell.
+
+After getting the input for each value function rules will be called and will perform
+above mentioned task(refer rules method).
+
+After the completion of the rules method update method will be called for updation purpose.
+
+Then whole list will be displayed as 30X30 matrix.
+
+After that user will be asked if it wants to search for particular cell if user
+enters 1 than user have to give the cell name.
+User can skip the method with typing any other key.
+
+As mentioned earlier this will be an infinite loop can be stoped only with
+ctrl+c in command prompt(Microsoft Windows)
+
+
+Thank You

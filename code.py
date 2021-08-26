@@ -1,6 +1,3 @@
-import random
-import time
-
 n = 30
 
 

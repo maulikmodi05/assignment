@@ -26,7 +26,7 @@ each cell either 0 or 1. 0 means Dead and 1 means live.
   and also cell can be searched through
   the key that user provided in the time of insertion.
 
-5 This process will go on until user use os calls to exit like Ctrl+c in windows
+5 This process will go on until user uses os calls to exit like Ctrl+c in windows
   Cmd.
 
 

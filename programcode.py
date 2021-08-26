@@ -112,7 +112,6 @@ class Grid:
 
     def display(self):
         for i in range(n):
-            # time.sleep(0.5)
             print(self.cell[i])
 
 
@@ -147,7 +146,7 @@ while True:
     print("After the rules applied")
     print()
     g.display()
-
+    print()
     while 1:
         print("Press 1 to search if an element is present or press any other key to skip")
         key = int(input())

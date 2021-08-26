@@ -145,6 +145,7 @@ while True:
             g.rules(i, j, l)
     g.update(l)
     print("After the rules applied")
+    print()
     g.display()
 
     while 1:
@@ -160,3 +161,4 @@ while True:
                 print("dead")
         else:
             break
+        print() 

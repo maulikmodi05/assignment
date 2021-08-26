@@ -22,7 +22,8 @@ each cell either 0 or 1. 0 means Dead and 1 means live.
 
 4 After the completion of function user will get to search the cell 
   the cells can be accessible through the following input:
-  a+(cell number in string format) and also cell can be searched through
+  a+(cell number in string format) for example a0 will fetch 'cell 1'
+  and also cell can be searched through
   the key that user provided in the time of insertion.
 
 5 This process will go on until user use os calls to exit like Ctrl+c in windows

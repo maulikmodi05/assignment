@@ -102,6 +102,8 @@ class Grid:
             if key == search:
                 i = self.dict[key]
                 return self.cell[i[0]][i[1]]
+        else:
+            return -1
 
     def dict_key(self, l):
         for x in self.dict:
@@ -109,7 +111,9 @@ class Grid:
                 return True
         else:
             return False
-
+                
+       
+            
     def display(self):
         for i in range(n):
             print(self.cell[i])
@@ -154,8 +158,11 @@ while True:
         if key == 1:
             search = input("Please Enter the cell name:  ")
             search = g.search_input(search)
+            print()
             if search == 1:
                 print("live")
+            elif search==-1:
+                print("cell name not found")
             else:
                 print("dead")
         else:

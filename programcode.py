@@ -45,6 +45,7 @@ class Grid:
                 k = int(k)
                 self.dict[d] = [i, j]
 
+
     def rules(self, i, j, l):
         def adjacent(cell, i, j):
             count = 0
@@ -98,12 +99,13 @@ class Grid:
             self.cell[i[0]][i[1]] = 1
 
     def search_input(self, search):
+        x=-1
         for key in self.dict:
             if key == search:
                 i = self.dict[key]
-                return self.cell[i[0]][i[1]]
-        else:
-            return -1
+                x=self.cell[i[0]][i[1]]
+                break
+        return x
 
     def dict_key(self, l):
         for x in self.dict:
@@ -111,11 +113,10 @@ class Grid:
                 return True
         else:
             return False
-                
-       
-            
+
     def display(self):
         for i in range(n):
+            # time.sleep(0.5)
             print(self.cell[i])
 
 
@@ -142,15 +143,15 @@ while True:
         else:
             print("Cell value that you have requested is not avalible as it is being used in different cell")
             print("Retry")
+    g.add(r,c,element,name)
     l = []
     for i in range(n):
         for j in range(n):
             g.rules(i, j, l)
     g.update(l)
     print("After the rules applied")
-    print()
     g.display()
-    print()
+
     while 1:
         print("Press 1 to search if an element is present or press any other key to skip")
         key = int(input())
@@ -158,13 +159,11 @@ while True:
         if key == 1:
             search = input("Please Enter the cell name:  ")
             search = g.search_input(search)
-            print()
             if search == 1:
                 print("live")
             elif search==-1:
-                print("cell name not found")
+                print("No cell present with given input")
             else:
                 print("dead")
         else:
             break
-        print() 
